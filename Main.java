@@ -14,15 +14,31 @@ class Main {
     // }
     // scanner.close();
 
-    for(int i = 0; i < 15; i++){
-      if(i % 2 == 0 && i < 9){
-        System.out.println(" * * * * * * ========================");
-      }else if(i % 2 != 0 && i < 9){
-        System.out.println("  * * * * *  ========================");
-      }else{
-        System.out.println(" ====================================");
+    // for(int i = 0; i < 15; i++){
+    //   if(i % 2 == 0 && i < 9){
+    //     System.out.println(" * * * * * * ========================");
+    //   }else if(i % 2 != 0 && i < 9){
+    //     System.out.println("  * * * * *  ========================");
+    //   }else{
+    //     System.out.println(" ====================================");
+    //   }
+    // }
+
+
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Saisir le nombre de lignes");
+    int nbLigne = scanner.nextInt();
+
+    for(int i = 0 ; i < nbLigne ; i++){
+      for(int j = 1 ; j < i+2 ; j++){
+        System.out.print(j);
       }
+      System.out.println();
     }
+
+    
+    scanner.close();
+    
     
   }
 }
